@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        section {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 99%;
+            position: relative;
+            padding-right: 0px;
+        }
+
+        .image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .login {
+            background-color: #9C928A;
+            padding: 20px;
+            padding-top: 10%;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            box-shadow: 0 4px 8px rgba(87, 6, 6, 0.2);
+            max-width: 400px;
+            height: 100%;
+            font-family: 'Roboto';
+            width: 100%;
+        }
+
+        .login h2 {
+            margin-bottom: 20px;
+            font-size: 30px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login h2 img {
+            margin-right: 10px;
+            height: 90px;
+        }
+
+        .input-container {
+            position: relative;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .input-container input {
+            width: calc(100%);
+            /* Adjusted width to accommodate icon */
+            height: 40px;
+            padding: 10px;
+            padding-right: 40px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            transition: border 0.3s ease;
+        }
+
+        .input-container input:focus {
+            outline: none;
+            border: 2px solid #007BFF;
+        }
+
+        .input-container img {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .login button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .login button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="image">
+            <img src="/register/assets/bgkopifixed.png" alt="Background Image">
+        </div>
+        <div class="login">
+            <h2><img src="/register/assets/duabijikopi.png" alt=""> CoffeGill</h2>
+            <form action="proses_login.php" method="POST">
+                <div class="input-container">
+                    <input type="text" placeholder="Username">
+                    <img src="/register/assets/pesan.svg" alt="Icon">
+                </div>
+                <div class="input-container">
+                    <input type="password" id="password" placeholder="Password">
+                    <img src="/register/assets/hidepw.svg" alt="Hide Password" id="pasWw">
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <button>Sign Up</button>
+        </div>
+    </section>
+
+    <script>
+        let eyeicon = document.getElementById('pasWw')
+
+        document.getElementById('pasWw').addEventListener('click', function () {
+            const password = document.getElementById('password');
+            if (password.type === 'password') {
+                password.type = 'text';
+                eyeicon.src = "/register/assets/view.png";
+            } else {
+                password.type = 'password';
+                eyeicon.src = "/register/assets/hidepw.svg";
+            }
+        });
+    </script>
+</body>
+
+</html>
