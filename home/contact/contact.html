@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+            color: #54382c;
+            background-color: #ffffff;
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #f6f7f9;
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+        }
+
+        li {
+            list-style-type: none;
+            display: inline;
+            color: #54382c;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #54382c;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        nav ul li a:hover {
+            border-bottom: #54382c solid;
+        }
+
+        .duabijikopi {
+            position: relative;
+            right: 3px;
+            height: auto;
+            width: 50px;
+        }
+
+        .bgkopi {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .kopigil {
+            position: relative;
+            right: 10px;
+            margin-right: 700px;
+        }
+
+        .garis {
+            margin-right: 10px;
+        }
+
+        .center-box {
+            width: calc(80% - 40px);
+            height: auto;
+            background-color: #E2D9C8;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            z-index: 1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+            /* Menyesuaikan lebar dengan parent */
+        }
+
+        .contact-row {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            width: 100%;
+            /* Menyesuaikan lebar dengan parent */
+        }
+
+        .contact-row img {
+            width: 30px;
+            /* Sesuaikan lebar gambar sesuai kebutuhan */
+            margin-right: 10px;
+            /* Berikan margin kanan untuk jarak antara gambar dan teks */
+        }
+
+        .contact-row p {
+            margin: 0;
+        }
+
+        .contact {
+            font-weight: bold;
+            color: black;
+        }
+
+        .kopi {
+            bottom: 550px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="assets/bgkopi.png" alt="Background" class="bgkopi">
+    <div class="center-box">
+        <img src="assets/duabijikopi.png " class="kopi" alt="duabijikopi">
+        <h1>CoffeeGill</h1>
+        <p class="contact">Contact CoffeeGill Anytime</p>
+        <div class="contact-info">
+            <div class="contact-row">
+                <img src="assets/wa.png" alt="WhatsApp">
+                <p>Whatsapp: +62-877-8714-8478</p>
+            </div>
+            <div class="contact-row">
+                <img src="assets/google.png" alt="Google">
+                <p>Email: coffeegill66@gmail.com</p>
+            </div>
+            <div class="contact-row">
+                <img src="assets/ig.png" alt="Instagram">
+                <p>Instagram: CoffeeGill66</p>
+            </div>
+            <div class="contact-row">
+                <img src="assets/maps.png" alt="Maps">
+                <p>Address: Jl. Petir</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <nav>
+            <img src="assets/duabijikopi.png" alt="duabijikopi" class="duabijikopi">
+            <p class="kopigil">CoffeeGill</p>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#home.html">Home</a></li>
+                <li><a href="#index-menu.php">Menu</a></li>
+                <li><a href="#contact.html">Contact</a></li>
+            </ul>
+            <img src="assets/line.svg" alt="garis" class="garis">
+        </nav>
+    </div>
+</body>
+
+</html>
