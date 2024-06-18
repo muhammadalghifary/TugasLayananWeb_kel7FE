@@ -13,6 +13,42 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+    <style>
+      .custom {
+        background-color:#E2D9C8;
+        margin-top:50px;
+        padding:20px;
+      }
+      .card-text {
+        font-weight:bold;
+      }
+      .card-title {
+        font-weight:bold;
+      }
+      .btn {
+        background-color:#AC7E64;
+        color:white;
+        border-radius:15px;
+      }
+      .flex-center {
+            display: flex;
+            align-items: center;
+        }
+        .flex-center img {
+            margin: 0 5px;
+        }
+         .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .d-flex.justify-content-between.align-items-center {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,55 +64,124 @@
       <img src="../Login/assets/line.svg" alt="garis" class="garis">
       <button class="register" id="btnregister">Logout</button>
     </nav>
+    <img src="assets/menu kopi.png" alt="">
 
-    <h2>Hallo User !</h2>
-      <img src="../Login/assets/duabijikopi.png" alt="duabijikopi" class="duabijikopi2">
-      <p class="kopigil2 mt-5">CoffeeGill</p>
-      <img src="Login/assets/bgkopi.png" alt="" class="bgkopi">
+    
 
       <!-- Form Control Input Data -->
-      <div class="container">
-        <div class="row">
-
-            <h3>Pemesanan Kopi</h3>
-            <form action="proses-menu.php" method="POST">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Nama</label>
-                <input type="text" name="nama_customer" class="form-control" id="exampleFormControlInput2" placeholder="masukkan nama">
-
+      <div class="container custom">
+      <div class="row">
+            <div class="col-md-2">
+                <div class="card custom-card">
+                    <img src="assets/cappucino.png" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title custom-card-title">CAPPUCINO</h5>
+                        <p class="custom-card-text">"Rasakan kesempurnaan rasa antara kopi dan susu dalam cappuccino kami."</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="custom-card-text mb-0">Rp. 18.000,-</p>
+                            <div class="flex-center">
+                                <img src="assets/min.png" alt="Minus">
+                                <p class="jumlahbayar mb-0">0</p>
+                                <img src="assets/plus.png" alt="Plus">
+                            </div>
+                        </div>
+                        <button class="btn  mt-2">Order Here</button>
+                    </div>
+                </div>
             </div>
-            
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Email</label>
-                <input type="text" name="email" class="form-control" id="exampleFormControlInput2" placeholder="maul@gmail.com">
+            <div class="col-md-2">
+                <div class="card custom-card">
+                    <img src="assets/mocha.png" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title custom-card-title">MOCHA</h5>
+                        <p class="custom-card-text">"Perpaduan sempurna antara cokelat dan kopi dalam segelas mocha yang memanjakan lidah."</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="custom-card-text mb-0">Rp. 23.000,-</p>
+                            <div class="flex-center">
+                                <img src="assets/min.png" alt="Minus">
+                                <p class="jumlahbayar mb-0">0</p>
+                                <img src="assets/plus.png" alt="Plus">
+                            </div>
+                        </div>
+                        <button class="btn  mt-2">Order Here</button>
+                    </div>
+                </div>
             </div>
-            
-            <div class="mb-3">
-                <label for="exampleFormControlInput2" class="form-label">No.telp</label>
-                <input type="text" name="noTelp" class="form-control" id="exampleFormControlInput2" placeholder="+62">
-        
+            <div class="col-md-2">
+                <div class="card custom-card">
+                    <img src="assets/macchiato.png" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title custom-card-title">MACCHIATO</h5>
+                        <p class="custom-card-text">"Sentuhan susu yang lembut pada espresso yang kaya, membuat macchiato kami istimewa."</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="custom-card-text mb-0">Rp. 17.000,-</p>
+                            <div class="flex-center">
+                                <img src="assets/min.png" alt="Minus">
+                                <p class="jumlahbayar mb-0">0</p>
+                                <img src="assets/plus.png" alt="Plus">
+                            </div>
+                        </div>
+                        <button class="btn  mt-2">Order Here</button>
+                    </div>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput2" class="form-label">alamat</label>
-                <input type="text" name="alamat" class="form-control" id="exampleFormControlInput2" placeholder="ciawi">
-        
+            <div class="col-md-2">
+                <div class="card custom-card">
+                    <img src="assets/americano.png" class="card-img-top" alt="Image 4">
+                    <div class="card-body">
+                        <h5 class="card-title custom-card-title">AMERICANO</h5>
+                        <p class="custom-card-text">"Kopi hitam yang kuat dan klasik, sempurna untuk memulai hari Anda."</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="custom-card-text mb-0">Rp. 16.000,-</p>
+                            <div class="flex-center">
+                                <img src="assets/min.png" alt="Minus">
+                                <p class="jumlahbayar mb-0">0</p>
+                                <img src="assets/plus.png" alt="Plus">
+                            </div>
+                        </div>
+                        <button class="btn mt-2">Order Here</button>
+                    </div>
+                </div>
             </div>
-
-            <div class="mb-3">
-                <label for="exampleFormControlInput2" class="form-label">jumlah pembelian</label>
-                <input type="text" name="jumlah_pembelian" class="form-control" id="exampleFormControlInput2" placeholder="1">
+            <div class="col-md-2">
+                <div class="card custom-card">
+                    <img src="assets/latte.png" class="card-img-top" alt="Image 5">
+                    <div class="card-body">
+                        <h5 class="card-title custom-card-title">LATTE</h5>
+                        <p class="custom-card-text">"Nikmati kehangatan lembut dalam setiap tegukan latte kami."</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="custom-card-text mb-0">Rp. 20.000,-</p>
+                            <div class="flex-center">
+                                <img src="assets/min.png" alt="Minus">
+                                <p class="jumlahbayar mb-0">0</p>
+                                <img src="assets/plus.png" alt="Plus">
+                            </div>
+                        </div>
+                        <button class="btn  mt-2">Order Here</button>
+                    </div>
+                </div>
             </div>
-
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Catatan</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" name="catatan" rows="3"></textarea>
+            <div class="col-md-2">
+                <div class="card custom-card">
+                    <img src="assets/expresso.png" class="card-img-top" alt="Image 6">
+                    <div class="card-body">
+                        <h5 class="card-title custom-card-title">EXPRESSO</h5>
+                        <p class="custom-card-text">"Nikmati keharuman dan kekuatan expresso kami yang segar."</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="custom-card-text mb-0">Rp. 15.000,-</p>
+                            <div class="flex-center">
+                                <img src="assets/min.png" alt="Minus">
+                                <p class="jumlahbayar mb-0">0</p>
+                                <img src="assets/plus.png" alt="Plus">
+                            </div>
+                        </div>
+                        <button class="btn  mt-2">Order Here</button>
+                    </div>
+                </div>
             </div>
-
-            <button class="btn btn-primary" type="submit" href="" name="bsimpan">Pesan Sekarang</button>
-            </form>
-            
         </div>
     </div>
+
     <!-- Akhiran Input -->
       
 
