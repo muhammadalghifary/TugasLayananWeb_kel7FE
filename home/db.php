@@ -5,7 +5,7 @@ $password = "password"; // Ganti dengan password MySQL Anda
 $dbname = "db_coffeeshop"; // Ganti dengan nama database Anda
 
 // Membuat koneksi
-$conn = new mysqli($servername, $username, $password, $dbcoffeeshop);
+$conn = new mysqli($servername, $username, $password, $db_coffeeshop);
 
 // Memeriksa koneksi
 if ($conn->connect_error) {
