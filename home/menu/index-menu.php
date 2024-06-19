@@ -60,7 +60,7 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Home</a></li>
         <li><a href="#">Menu</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact.html">Contact</a></li>
       </ul>
       <img src="../Login/assets/line.svg" alt="garis" class="garis">
       <button class="register" id="btnregister">Logout</button>
