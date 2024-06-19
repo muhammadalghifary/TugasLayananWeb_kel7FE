@@ -36,50 +36,50 @@
     </main>
   </div>
   <script>
-    document.getElementById('btnregister').addEventListener('click' , function () {
+    document.getElementById('btnregister').addEventListener('click', function () {
       window.location.href = 'register/register.php'
     })
 
-    
+
 
     //ketika mouse mendekat btn register bg warna putih dan text coklat
     //ketika mouse mendekat btn login bg warna biru dan text coklat
     const btnlogin = document.getElementById('btnlogin')
-    btnlogin.addEventListener('mouseover',function() {
+    btnlogin.addEventListener('mouseover', function () {
       btnlogin.style.background = '#0066ff' //biru
       btnlogin.style.color = 'white'
       btnregister.style.background = 'white'
       btnregister.style.color = '#54382c'//coklat
-      
+
     })
 
     //ketika mouse menjauh btn register bg warna biru dan text putih
     //ketika mouse menjauh btn login bg warna putih dan text coklat
-    btnlogin.addEventListener('mouseout',function() {
+    btnlogin.addEventListener('mouseout', function () {
       btnregister.style.background = '#0066ff' //biru
-      btnregister.style.color = 'white'      
+      btnregister.style.color = 'white'
       btnlogin.style.background = 'white'
       btnlogin.style.color = '#54382c'//coklat
     })
-    
+
     //ketika mouse mendekat btn register bg warna putih dan text coklat
     //ketika mouse menjauh btn login bg warna biru dan text putih
-    btnregister.addEventListener('mouseover',function(){
-      btnregister.style.background = 'white' 
+    btnregister.addEventListener('mouseover', function () {
+      btnregister.style.background = 'white'
       btnregister.style.color = '#54382c'//coklat
       btnlogin.style.background = '#0066ff' //biru
       btnlogin.style.color = 'white'
     })
-    
+
     //ketika mouse menjauh btn register bg warna biru dan text putih
     //ketika mouse menjauh btn login bg warna putih dan text coklat
-    btnregister.addEventListener('mouseout',function() {
+    btnregister.addEventListener('mouseout', function () {
       btnregister.style.background = '#0066ff' //biru
-      btnregister.style.color = 'white'      
+      btnregister.style.color = 'white'
       btnlogin.style.background = 'white'
       btnlogin.style.color = '#54382c'//coklat
     })
-    
+
     btnlogin.addEventListener('click', function () {
       window.location.href = 'login/login.php'
     })
