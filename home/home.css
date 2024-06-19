@@ -44,7 +44,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  border-bottom: #54382c solid ;
+  border-bottom: #54382c solid;
 }
 
 .duabijikopi {
@@ -57,9 +57,11 @@ nav ul li a:hover {
 .bgkopi {
   width: 100%;
   height: 100%;
-  position: relative;
-  bottom: 110px;
-  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .kopigil {
@@ -68,13 +70,13 @@ nav ul li a:hover {
   margin-right: 700px;
 }
 
-/* .kopigil2 {
+.kopigil2 {
   position: absolute;
-  bottom: 230px;
+  bottom: 280px;
   left: 570px;
   text-align: center;
   font-size: 2rem;
-} */
+}
 
 button {
   margin-right: 10px;
@@ -109,3 +111,9 @@ button {
   margin-right: 10px;
 }
 
+.duabijikopi2 {
+  position: relative;
+  top: 50px;
+  height: 300px;
+  left: 500px;
+}
