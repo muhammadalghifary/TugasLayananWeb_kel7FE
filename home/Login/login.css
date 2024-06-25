@@ -107,8 +107,8 @@ button {
 
 .pesan {
   position: absolute;
-  bottom: 340px;
-  right: 10px;
+  bottom: 395px;
+  left: 1263px;
 }
 .user {
   position: absolute;
@@ -118,8 +118,8 @@ button {
 
 .pw {
   position: absolute;
-  bottom: 250px;
-  right: 10px;
+  bottom: 308px;
+  right: 79px;
   cursor: pointer;
 }
 
