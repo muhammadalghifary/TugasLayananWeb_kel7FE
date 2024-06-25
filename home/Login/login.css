@@ -69,7 +69,7 @@ button {
   text-align: left;
   vertical-align: top;
   padding: calc(0.875rem - 3px) 63px calc(0.875rem - 3px) 15px;
-  background-color: rgb(15, 98, 254);
+  background-color: rgb(254, 150, 15);
   font-size: 14px;
   letter-spacing: 0.16px;
   min-height: 48px;
@@ -107,7 +107,7 @@ button {
 
 .pesan {
   position: absolute;
-  bottom: 395px;
+  bottom: 155px;
   left: 1263px;
 }
 .user {
@@ -118,7 +118,7 @@ button {
 
 .pw {
   position: absolute;
-  bottom: 308px;
+  bottom: 208px;
   right: 79px;
   cursor: pointer;
 }

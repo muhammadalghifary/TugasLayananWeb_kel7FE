@@ -62,7 +62,7 @@
         <li><a href="../contact/contact.html">Contact</a></li>
       </ul>
       <img src="../Login/assets/line.svg" alt="garis" class="garis">
-      <button class="register" id="btnregister">Logout</button>
+      <button class="login" id="btnlogin">Logout</button>
     </nav>
     <img src="assets/menu kopi.png" alt="">
 
@@ -274,9 +274,9 @@
                   <img src="assets/plus.png" alt="Plus" class="plus" data-item="mocha">
                 </div>
               </div>
-              <button class="btn mt-2" data-bs-toggle="modal" data-bs-target="#Mocha">Order Here</button>
+              <button class="btn mt-2" data-bs-toggle="modal" data-bs-target="#ex">Order Here</button>
               <!-- Modal -->
-              <div class="modal fade" id="Mocha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal fade" id="ex" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-body">
@@ -297,7 +297,7 @@
                     <div class="modal-footer">
                       <p class="fw-semibold">Konfirmasi Tindakan?</p>
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
-                      <button type="button" class="btn btn-primary">Ya</button>
+                      <a type="button" href="../transaksi/index_transaksi.html" class="btn btn-primary">Ya</a>
                     </div>
                   </div>
                 </div>
@@ -360,8 +360,11 @@
     </div>
 
   <script>
-    document.getElementById('btnregister').addEventListener('click' , function () {
-      window.location.href = 'register/register.php'
+    document.getElementById('btnlogin').addEventListener('click' , function () {
+      window.location.href = '../login/login.php'
+    });
+    document.getElementById('btn-primary').addEventListener('click' , function () {
+      window.location.href = '../login/login.php'
     });
 
     const items = {
@@ -395,6 +398,19 @@
       document.getElementById(`modal-total-${item}`).innerText = items[item].quantity * items[item].price;
     }
 
+    // btnlogin.addEventListener('mouseover', function () {
+    //   btnregister.style.background = 'white'
+    //   btnregister.style.color = '#54382c'//coklat
+    //   btnlogin.style.background = '#0066ff' //biru
+    //   btnlogin.style.color = 'white'
+    // })
+
+    
+    // btnlogin.addEventListener('mouseout', function () {
+    //   btnregister.style.background = '#0066ff' //biru
+    //   btnregister.style.color = 'white'
+    //   btnlogin.style.background = 'white'
+    //   btnlogin.style.color = '#54382c'//coklat
     // Add more modal functionality as needed...
   </script>
 
